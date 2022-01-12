@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "animalsgonewild"
+version = "0.1.0"
+description = "Behaves like the text equivalent of an animal inspired Instagram filter"
+authors = ["DSCI 524 - Team 16"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
