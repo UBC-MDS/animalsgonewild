@@ -3,6 +3,9 @@
 
 This package is designed to demonstrate how basic features of text analysis can be utilized to analyze, sort, and represent a text file or string, while applying a humorous lens (because what is data science without the humor we see embedded throughout the R programming language and core packages). This package can analyze a text (stored as a string), sort based on number of words, and then represent the text via image (animal size will correspond to length) and wordcloud. We have included a bonus fourth function for fun, inspired by the popular childhood game MadLibs.
 
+# Contributors
+Kyle Maj, Nagraj Rao, Morgan Rosenberg, Junrong Zhu
+
 ## Installation
 
 ```bash
