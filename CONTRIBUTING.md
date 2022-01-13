@@ -1,7 +1,6 @@
 # Contributing
 
-Contributions are welcome, and they are greatly appreciated! Every little bit
-helps, and credit will always be given.
+We welcome feedback and proposed changes to this analysis project, as well as any bug reports and typos. Any permissible up-to-date data set upload is highly appreciated, as it will help us ensure our analysis can be amended to remain as timely as possible. The outline below indicates how to best proceed to communicate any such information.
 
 ## Types of Contributions
 
@@ -18,16 +17,14 @@ If you are reporting a bug, please include:
 Look through the GitHub issues for bugs. Anything tagged with "bug" and "help
 wanted" is open to whoever wants to implement it.
 
+### Fixing typos
+
+Small typos or grammatical errors in text documentation may be edited directly using the GitHub web interface, so long as the changes are made in the source file.
+
 ### Implement Features
 
 Look through the GitHub issues for features. Anything tagged with "enhancement"
 and "help wanted" is open to whoever wants to implement it.
-
-### Write Documentation
-
-You can never have enough documentation! Please feel free to contribute to any
-part of the documentation, such as the official docs, docstrings, or even 
-on the web in blog posts, articles, and such.
 
 ### Submit Feedback
 
@@ -61,11 +58,14 @@ Ready to contribute? Here's how to set up `animalsgonewild` for local developmen
 
 ## Pull Request Guidelines
 
-Before you submit a pull request, check that it meets these guidelines:
+* A Git branch need to be created for each pull request (PR) and one of the member will review and approve the request before megering it with main branch.
 
-1. The pull request should include additional tests if appropriate.
-2. If the pull request adds functionality, the docs should be updated.
-3. The pull request should work for all currently supported operating systems and versions of Python.
+In brief:
+
+1. Clone the repository locally.
+2. Create a new branch.
+3. Commit and push the change in that branch.
+4. Submit pull request from that branch to the master branch.
 
 ## Code of Conduct
 
