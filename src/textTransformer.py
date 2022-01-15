@@ -1,9 +1,7 @@
-def textTransformer(text, class_object):
+def textTransformer(text):
     """    
-    Based on the classifications determined by the functions `animalType() and 
-    _____, This function modifys the original block of text by replacing all pronouns
-    with a complexity category and all nouns with an animal. If classifiers have
-    not been used "smart" and "duck" will be used respectively.
+    This function modifies a block of text by replacing all pronouns
+    with a complexity category and all nouns with an animal.
 
     Parameters
     ----------
@@ -14,8 +12,6 @@ def textTransformer(text, class_object):
     -------
     str
         a string containing the transformed text.
-    class_object
-        a class object containing the outputs of the previous functions.
 
     Example
     --------
