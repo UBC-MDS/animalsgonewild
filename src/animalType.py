@@ -5,7 +5,7 @@ def animalType(species, text):
     Parameters
     ----------
     species: str
-        name of the species determined from <INSERT FUNCTION NAME> or user determined
+        name of the species determined from animalClassifier.py or user determined
     text: str
         text to be analyzed
     Returns
@@ -15,7 +15,7 @@ def animalType(species, text):
     
     Example
     --------
-    >>> animal_rep = animalType(FUNCTION NAME(text), text) 
+    >>> animal_rep = animalType(animalClassifier(text), text) 
     >>> animal_rep = animalType("duck", text) 
     >>> animal_rep(species, text)
     reallySmartDuck.jpg
