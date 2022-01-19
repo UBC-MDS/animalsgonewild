@@ -2,8 +2,8 @@ import string
 import numpy as np
 
 def animalClassifier(text):
-    """    
-    Count proportion of unique words in the input text and returns an corresponding animal type. 
+    """
+    Count total unique words in the input text and returns an animal type.
     
     Parameters
     ----------
@@ -14,12 +14,15 @@ def animalClassifier(text):
     -------
     str
         the corresponding animal species
-    
+        
     Example
     --------
-    >>> animalClassifier("what do you think?") 
+    >>> animalClassifier("what do you think?")
     "duck"
     """
+    if not isinstance(text, str):
+        raise TypeError("Text input should be of type 'str'")
+    
     animal_list = ["Duck", "Monkey", "Giraffe", "Whale"]
     cleaned_text = text.translate(str.maketrans('', '', string.punctuation))
     total_words = len(str.split(cleaned_text))

@@ -1,3 +1,4 @@
+from pickle import TRUE
 import string
 
 
@@ -20,17 +21,21 @@ def animalClassifier(text):
     >>> animalClassifier("what do you think?")
     "duck"
     """
-    animal_list = ["Duck", "Monkey", "Giraffe", "Whale"]
+    if not isinstance(text, str):
+        raise TypeError("Text input should be of type 'str'")
     
+    animal_list = ["Duck", "Monkey", "Giraffe", "Whale"]
     cleaned_text = text.translate(str.maketrans('', '', string.punctuation))
-    unique_words = np.unique(np.array(str.split(cleaned_text)))
-    counts = len(unique_words)
+    total_words = len(str.split(cleaned_text))
+    unique_words = np.unique(str.split(cleaned_text))
+    uni_counts = len(unique_words)
 
-    if counts <= 20:
+
+    if uni_counts/total_words <= 0.4:
         output = animal_list[0]
-    elif counts <= 80:
+    elif uni_counts/total_words <= 0.6:
         output = animal_list[1]
-    elif counts <= 160:
+    elif uni_counts/total_words <= 0.8:
         output = animal_list[2]
     else:
         output = animal_list[3]
