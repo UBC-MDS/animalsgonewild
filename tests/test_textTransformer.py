@@ -24,7 +24,7 @@ def test_short_text():
     actual = textTransformer(text5)
     assert actual == expected, "Transformer did not correctly transform short text"
     
-def test_short_text():
+def test_length():
     expected = 54
-    actual = textTransformer(text1)
+    actual = textTransformer(text2)
     assert len(actual.split()) == expected, "Transformer changed the text wordcount"
