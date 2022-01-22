@@ -1,5 +1,15 @@
 import string
 import numpy as np
+import nltk
+nltk.download('wordnet')
+nltk.download('omw-1.4')
+from pathlib import Path
+from PIL import Image
+from nltk.corpus import wordnet as wn
+from newspaper import Article
+from wordcloud import STOPWORDS
+from wordcloud import WordCloud
+import matplotlib.pyplot as plt
 
 def animalClassifier(text):
     """
@@ -86,12 +96,8 @@ def wordCloud(link):
     wordcloud_image.jpg
     """
     
-import nltk
-nltk.download('wordnet')
-nltk.download('omw-1.4')
 
-import string
-from nltk.corpus import wordnet as wn
+
     
 def textTransformer(text):
     """    
@@ -132,9 +138,7 @@ def textTransformer(text):
     assert type(text) == str, "Output is not str datatype"
     return output
 
-from pathlib import Path
-import string
-from PIL import Image
+
 
 def animalType(species, text):
     """    
@@ -183,12 +187,7 @@ def animalType(species, text):
 
     return img
 
-from newspaper import Article
-from wordcloud import STOPWORDS
-from wordcloud import WordCloud
-import matplotlib.pyplot as plt
-from PIL import Image
-import numpy as np
+
 def wordCloud(link):
     """
     Inputs a text and animal picture to return a wordcloud in the shape of the animal created using the text.
