@@ -64,7 +64,7 @@ def animalType(species, text):
     reallySmartDuck.jpg
     """
 
-def wordcloud(image, text):
+def wordCloud(link):
     """
     Inputs a text and animal picture to return a wordcloud in the shape of the animal created using the text.
 
@@ -85,7 +85,14 @@ def wordcloud(image, text):
     >>> word_cloud = wordcloud(image, text) 
     wordcloud_image.jpg
     """
+    
+import nltk
+nltk.download('wordnet')
+nltk.download('omw-1.4')
 
+import string
+from nltk.corpus import wordnet as wn
+    
 def textTransformer(text):
     """    
     This function modifies a block of text by replacing all pronouns
@@ -107,3 +114,24 @@ def textTransformer(text):
     >>> textTransformer(text)
     "The smart duck walked across the duck"
     """
+    
+    assert type(text) == str, "Input is not str datatype"
+    
+    nouns = {x.name().split('.', 1)[0] for x in wn.all_synsets('n')}
+    
+    #animal = animalClassifier(text)   # use this once animalClassfier is working
+
+    animal = "Duck"   #temporary paceholder
+
+    text_list = text.split()
+    revised_text_list = text_list
+
+    for i in range(0, len(text_list)):
+        if text_list[i] in nouns:
+            revised_text_list[i] = animal
+
+    output = ' '.join(revised_text_list)
+    
+    assert type(text) == str, "Output is not str datatype"
+    
+    return output
