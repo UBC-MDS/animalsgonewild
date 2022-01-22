@@ -1,5 +1,12 @@
 import string
 import numpy as np
+import nltk
+from nltk.corpus import wordnet as wn
+from pathlib import Path
+from PIL import Image
+nltk.download('wordnet')
+nltk.download('omw-1.4')
+
 
 def animalClassifier(text):
     """
@@ -41,29 +48,6 @@ def animalClassifier(text):
 
     return output
 
-def animalType(species, text):
-    """    
-    Analyzes text based on average word length and returns an animal picture representing language complexity. 
-    
-    Parameters
-    ----------
-    species: str
-        name of the species determined from animalClassifier.py or user determined
-    text: str
-        text to be analyzed
-    Returns
-    -------
-    jpg
-        an image representative of the species and the complexity of the text (more complex text will have 'wiser' looking animals)
-    
-    Example
-    --------
-    >>> animal_rep = animalType(animalClassifier(text), text) 
-    >>> animal_rep = animalType("duck", text) 
-    >>> animal_rep(species, text)
-    reallySmartDuck.jpg
-    """
-
 def wordCloud(link):
     """
     Inputs a text and animal picture to return a wordcloud in the shape of the animal created using the text.
@@ -85,13 +69,6 @@ def wordCloud(link):
     >>> word_cloud = wordcloud(image, text) 
     wordcloud_image.jpg
     """
-    
-import nltk
-nltk.download('wordnet')
-nltk.download('omw-1.4')
-
-import string
-from nltk.corpus import wordnet as wn
     
 def textTransformer(text):
     """    
@@ -131,10 +108,6 @@ def textTransformer(text):
     
     assert type(text) == str, "Output is not str datatype"
     return output
-
-from pathlib import Path
-import string
-from PIL import Image
 
 def animalType(species, text):
     """    
