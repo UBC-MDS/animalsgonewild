@@ -118,10 +118,7 @@ def textTransformer(text):
     assert type(text) == str, "Input is not str datatype"
     
     nouns = {x.name().split('.', 1)[0] for x in wn.all_synsets('n')}
-    
-    #animal = animalClassifier(text)   # use this once animalClassfier is working
-
-    animal = "Duck"   #temporary paceholder
+    animal = animalClassifier(text)
 
     text_list = text.split()
     revised_text_list = text_list
@@ -133,5 +130,4 @@ def textTransformer(text):
     output = ' '.join(revised_text_list)
     
     assert type(text) == str, "Output is not str datatype"
-    
     return output
