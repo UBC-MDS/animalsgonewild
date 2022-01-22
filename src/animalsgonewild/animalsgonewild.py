@@ -131,3 +131,54 @@ def textTransformer(text):
     
     assert type(text) == str, "Output is not str datatype"
     return output
+
+from pathlib import Path
+import string
+from PIL import Image
+
+def animalType(species, text):
+    """    
+    Analyzes text based on average word length and returns an animal picture representing language complexity. 
+    
+    Parameters
+    ----------
+    species: str
+        name of the species determined from animalClassifier.py or user determined
+    text: str
+        text to be analyzed
+    Returns
+    -------
+    jpeg
+        an image representative of the species and the complexity of the words used (more complex words will have 'wiser' looking animals)
+    
+    Example
+    --------
+    >>> animal_rep = animalType(animalClassifier(text), text) 
+    >>> animal_rep = animalType("duck", text) 
+    >>> animal_rep(species, text)
+    smart_Duck.jpeg
+    """
+    
+    if not isinstance(text, str):
+        raise TypeError("Text input should be of type 'str'")
+        
+    if not isinstance(species, str):
+        raise TypeError("Species input should be of type 'str'")
+    
+    words = text.translate(str.maketrans('', '', string.punctuation)).split()
+    average = sum(len(w) for w in words) / len(words)
+    iq = ""
+    
+    if average < 5:
+        iq = "dumb"
+    else:
+        iq = "smart"
+    filename = "".join([iq, "_", species, ".jpeg"])    
+    
+    data_folder = Path("src/animalsgonewild/imgs/")
+
+    file_to_open = data_folder / filename
+
+    img = Image.open(file_to_open)
+
+    return img
