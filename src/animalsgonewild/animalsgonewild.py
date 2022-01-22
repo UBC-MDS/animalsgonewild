@@ -183,7 +183,7 @@ def animalType(species, text):
 
     return img
 
-    from newspaper import Article
+from newspaper import Article
 from wordcloud import STOPWORDS
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
