@@ -8,7 +8,7 @@ Kyle Maj, Nagraj Rao, Morgan Rosenberg, Junrong Zhu
 ## Installation
 
 ```bash
-$ pip install animalsgonewild-0.1.0-py3-none-any.whl
+$ pip install git+https://github.com/UBC-MDS/animalsgonewild
 ```
 
 ## Usage
