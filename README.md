@@ -44,3 +44,6 @@ It is licensed under the terms of the MIT license.
 ## Credits
 
 `animalsgonewild` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+
+# Easter egg #1
+Did you know the name of our package was almost called "whattheduck"?
