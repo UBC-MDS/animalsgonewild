@@ -130,7 +130,7 @@ def animalType(species, text):
         iq = "smart"
     filename = "".join([iq, "_", species, ".jpeg"])    
     
-    data_folder = Path("src/animalsgonewild/imgs/")
+    data_folder = Path("../src/animalsgonewild/imgs/")
 
     file_to_open = data_folder / filename
 
@@ -165,7 +165,7 @@ def wordCloud(link):
     article_length = len(article.text)
     
     if article_length < 300:
-        mask = np.array(Image.open(Path('src/animalsgonewild/images/duck.jpg')))
+        mask = np.array(Image.open(Path('../src/animalsgonewild/images/duck.jpg')))
         wc = WordCloud(stopwords=STOPWORDS, mask=mask, background_color="white", max_words=2000, max_font_size=256, random_state=42,
                        width=mask.shape[0], height=mask.shape[0])
         wc.generate(article.text)
@@ -173,7 +173,7 @@ def wordCloud(link):
         plt.axis('off')
         animal = 'duck'
     elif article_length < 2000:
-        mask = np.array(Image.open(Path('src/animalsgonewild/images/monkey.jpg')))
+        mask = np.array(Image.open(Path('../src/animalsgonewild/images/monkey.jpg')))
         wc = WordCloud(stopwords=STOPWORDS, mask=mask, background_color="white", max_words=2000, max_font_size=256, random_state=42,
                        width=mask.shape[0], height=mask.shape[0])
         wc.generate(article.text)
@@ -181,7 +181,7 @@ def wordCloud(link):
         plt.axis('off')
         animal = 'monkey'
     elif article_length < 3000:
-        mask = np.array(Image.open(Path('src/animalsgonewild/images/giraffe.jpg')))
+        mask = np.array(Image.open(Path('../src/animalsgonewild/images/giraffe.jpg')))
         wc = WordCloud(stopwords=STOPWORDS, mask=mask, background_color="white", max_words=2000, max_font_size=256, random_state=42,
                        width=mask.shape[0], height=mask.shape[0])
         wc.generate(article.text)
@@ -189,7 +189,7 @@ def wordCloud(link):
         plt.axis('off')
         animal = 'giraffe'
     else:
-        mask = np.array(Image.open(Path('src/animalsgonewild/images/whale.jpg')))
+        mask = np.array(Image.open(Path('../src/animalsgonewild/images/whale.jpg')))
         wc = WordCloud(stopwords=STOPWORDS, mask=mask, background_color="white", max_words=2000, max_font_size=256, random_state=42,
                        width=mask.shape[0], height=mask.shape[0])
         wc.generate(article.text)
