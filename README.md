@@ -8,7 +8,7 @@ Kyle Maj, Nagraj Rao, Morgan Rosenberg, Junrong Zhu
 ## Installation
 
 ```bash
-$ pip install animalsgonewild
+$ pip install git+https://github.com/UBC-MDS/animalsgonewild
 ```
 
 ## Usage
