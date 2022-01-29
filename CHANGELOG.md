@@ -2,6 +2,17 @@
 
 <!--next-version-placeholder-->
 
+## v1.1.0 (29/01/2022)
+
+### Feature
+
+- implemented ReadtheDocs documentation
+- configured ci-cd.yml for Github actions
+
+### Fix
+
+- corrected a file pathing issue which was causing tests to fail
+
 ## v1.0.0 (22/01/2022)
 
 ### Feature
