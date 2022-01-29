@@ -1,6 +1,6 @@
 # animalsgonewild
 
-This package is designed to demonstrate how basic features of text analysis can be utilized to analyze and represent a text file or string while applying a humorous lens (because what is data science without a dash of humor!). It counts the number of words from a text, calculates the average word length of that text, and returns an animal image corresponding to the average word length. It subsequently transforming the text into a wordcloud in the shape of the animal. We have included a bonus fourth function for fun, inspired by the popular childhood game - MadLibs.
+This package is designed to demonstrate how basic features of text analysis can be utilized to analyze and represent a text file or string while applying a humorous lens (because what is data science without a dash of humor!). It counts the number of words from a text, calculates the average word length of that text, and returns an animal image corresponding to the average word length. It subsequently transforms the text into a wordcloud in the shape of the animal. We have included a bonus fourth function for fun, inspired by the popular childhood game - MadLibs.
 
 # Contributors
 Kyle Maj, Nagraj Rao, Morgan Rosenberg, Junrong Zhu
