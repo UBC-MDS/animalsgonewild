@@ -47,3 +47,6 @@ It is licensed under the terms of the MIT license.
 
 # Easter egg #1
 Did you know the name of our package was almost called "whattheduck"?
+
+# Easter egg #2
+Got any carrots?
