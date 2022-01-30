@@ -50,3 +50,6 @@ Did you know the name of our package was almost called "whattheduck"?
 
 # Easter egg #2
 Got any carrots?
+
+# Easter egg #3
+Aren't we pretty?
