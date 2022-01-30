@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "animalsgonewild"
-version = "0.1.0"
+version = "1.1.0"
 description = "Behaves like the text equivalent of an animal inspired Instagram filter"
 authors = ["DSCI 524 - Team 16"]
 license = "MIT"
@@ -18,6 +18,7 @@ codecov = "^2.1.12"
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.5"
 pytest-cov = "^3.0.0"
+codecov = "^2.1.12"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
