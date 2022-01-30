@@ -26,7 +26,8 @@ jobs:
       run: poetry install
     # Step 6. Run tests for package
     - name: Test with pytest
-      run: poetry run pytest tests/ --cov=animalsgonewild --cov-report=xml
+      run: 
+        poetry run pytest tests/ --cov=animalsgonewild --cov-report=xml
     # Step 7. Use Codecov to track coverage
     - uses: codecov/codecov-action@v2
       with:
@@ -58,10 +59,6 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           semantic-release publish
-          
-    - name: Build package and publish to test PyPI
-      run: |
-        poetry build
         
     # Step 5. Publish to TestPyPI
     - uses: pypa/gh-action-pypi-publish@release/v1
