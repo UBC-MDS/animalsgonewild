@@ -59,14 +59,20 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           semantic-release publish
-    # Step 5. Install our package
+  
+   # Step 5. Install poetry
+    - uses: snok/install-poetry@v1
+    
+    # Step 6. Install our package
     - name: Install package
       run: poetry install
-    # Step 6: Build the package
+      
+    # Step 7: Build the package
     - name: Build package and publish to test PyPI
       run: |
         poetry build
-    # Step 7. Publish to TestPyPI
+        
+    # Step 8. Publish to TestPyPI
     - uses: pypa/gh-action-pypi-publish@release/v1
       with:
         user: __token__
