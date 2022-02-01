@@ -1,4 +1,5 @@
 from animalsgonewild.animalsgonewild import animalClassifier
+import pytest
 
 text = "one, one, one"
 text1 = "test tests test for test"
@@ -24,3 +25,9 @@ def test_whale():
     expected = 'Whale'
     actual = animalClassifier(text3)
     assert actual == expected, "Classifier failed to output Whale!"
+
+def test_input_error():
+    """Check TypeError raised when the input is not string"""
+    with pytest.raises(TypeError):
+        try_num = 111
+        animalClassifier(try_num)
