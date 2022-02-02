@@ -141,11 +141,9 @@ def animalType(species, text):
 
 def wordCloud(link):
     """
-    Inputs a text and animal picture to return a wordcloud in the shape of the animal created using the text.
+    Inputs the URL of a website to return a wordcloud in the shape of the animal created and the animal name itself.
     Parameters
     ----------
-    image: jpg
-        an image representative of the species based on the complexity of the text from animalType.py
     text: str
         text to be inserted
     Returns
