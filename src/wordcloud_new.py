@@ -7,7 +7,7 @@ import numpy as np
 
 def wordCloud(link):
     """
-    Inputs a text and animal picture to return a wordcloud in the shape of the animal created using the text.
+    Inputs URL of a website to return the name and a wordcloud in the shape of the animal created using the text.
 
     Parameters
     ----------
