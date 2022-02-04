@@ -2,7 +2,9 @@
 
 [![codecov](https://codecov.io/gh/UBC-MDS/animalsgonewild/branch/main/graph/badge.svg?token=tGLNiVr2OZ)](https://codecov.io/gh/UBC-MDS/animalsgonewild)
 
-[![docs](https://animalsgonewild.readthedocs.io/en/latest/?badge=latest)](https://animalsgonewild.readthedocs.io/en/latest/?badge=latest)
+![docs](https://animalsgonewild.readthedocs.io/en/latest/?badge=latest)
+
+![ci-cd](https://github.com/UBC-MDS/animalsgonewild/blob/junrong-patch-1/.github/workflows/ci-cd.yml/badge.svg)
 
 This package is designed to demonstrate how basic features of text analysis can be utilized to analyze and represent a text file or string while applying a humorous lens (because what is data science without a dash of humor!). It counts the number of words from a text, calculates the average word length of that text, and returns an animal image corresponding to the average word length. It subsequently transforms the text into a wordcloud in the shape of the animal. We have included a bonus fourth function for fun, inspired by the popular childhood game - MadLibs.
 
