@@ -1,4 +1,5 @@
 from animalsgonewild.animalsgonewild import wordCloud
+import pytest
 
 text_wordcloud = "https://www.canada.ca/en.html"
 text_wordcloud1 = "http://www.calendar.ubc.ca/"
