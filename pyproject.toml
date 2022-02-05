@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "animalsgonewild"
-version = "1.1.3"
+version = "1.1.7"
 description = "Behaves like the text equivalent of an animal inspired Instagram filter"
 authors = ["DSCI 524 - Team 16"]
 license = "MIT"

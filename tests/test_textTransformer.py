@@ -1,5 +1,6 @@
 from animalsgonewild.animalsgonewild import textTransformer
 from animalsgonewild.animalsgonewild import animalClassifier
+import pytest
 
 text = "one, one, one"
 text1 = "test tests test for test"
@@ -28,3 +29,9 @@ def test_length():
     expected = 54
     actual = textTransformer(text2)
     assert len(actual.split()) == expected, "Transformer changed the text wordcount"
+    
+def test_input_error():
+    """Check TypeError raised when the input is not string"""
+    with pytest.raises(TypeError):
+        try_num = 111
+        textTransformer(try_num)
