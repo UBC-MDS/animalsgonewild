@@ -24,3 +24,9 @@ def test_whaleshapedwordcloud():
     expected = 'whale'
     actual = wordCloud(text_wordcloud3)
     assert actual == expected, "WordCloud failed to output whale!"
+
+def test_input_error_wordcloud():
+    """Check TypeError raised when the input is not string"""
+    with pytest.raises(TypeError):
+        number = 111
+        wordCloud(number)
