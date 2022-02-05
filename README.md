@@ -11,12 +11,22 @@ Kyle Maj, Nagraj Rao, Morgan Rosenberg, Junrong Zhu
 ## Installation
 
 ```bash
-pip install git+https://github.com/UBC-MDS/animalsgonewild
+pip install animalsgonewild
 ```
 
 ## Usage
 
 This package can be used in conjunction with any code to read in multiple text files to analyze and compare whole corpuses (your software must call the Animals Gone Wild functions for each text variable).
+
+For more examples of usage in python, please check out this [link](https://animalsgonewild.readthedocs.io/en/latest/example.html).
+
+```
+import animalsgonewild
+from animalsgonewild.animalsgonewild import animalClassifier
+from animalsgonewild.animalsgonewild import animalType
+from animalsgonewild.animalsgonewild import textTransformer
+from animalsgonewild.animalsgonewild import wordClous
+```
 
 ### Function 1: animalClassifier
 
