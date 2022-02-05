@@ -33,5 +33,5 @@ def test_length():
 def test_input_error():
 """Check TypeError raised when the input is not string"""
 with pytest.raises(TypeError):
-        try_num = 111
-        textTransformer(try_num)
+    try_num = 111
+    textTransformer(try_num)
