@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "animalsgonewild"
-version = "1.1.1"
+version = "1.1.5"
 description = "Behaves like the text equivalent of an animal inspired Instagram filter"
 authors = ["DSCI 524 - Team 16"]
 license = "MIT"
@@ -36,3 +36,4 @@ build_command = "pip install poetry && poetry build"  # build dists
 dist_path = "dist/"                         # where to put dists
 upload_to_pypi = false                      # don't auto-upload to PyPI
 remove_dist = false                         # don't remove dists
+patch_without_tag = "true"                  # always bump version on CD
