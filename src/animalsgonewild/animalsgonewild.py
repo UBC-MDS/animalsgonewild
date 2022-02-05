@@ -72,7 +72,8 @@ def textTransformer(text):
     "The smart duck walked across the duck"
     """
     
-    assert type(text) == str, "Input is not str datatype"
+    if not isinstance(text, str):
+        raise TypeError("Text input should be of type 'str'")
     
     nouns = {x.name().split('.', 1)[0] for x in wn.all_synsets('n')}
     animal = animalClassifier(text)
