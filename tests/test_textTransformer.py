@@ -31,7 +31,7 @@ def test_length():
     assert len(actual.split()) == expected, "Transformer changed the text wordcount"
     
 def test_input_error():
-"""Check TypeError raised when the input is not string"""
+    """Check TypeError raised when the input is not string"""
     with pytest.raises(TypeError):
         try_num = 111
         textTransformer(try_num)
